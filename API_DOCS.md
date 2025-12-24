@@ -22,7 +22,7 @@
 
 **浏览器/CURL**:
 ```bash
-curl "http://localhost:3000/api/extract?url=https://mp.weixin.qq.com/s/1czzeOClAF1e_AQjCM4jCg"
+curl "http://localhost:6800/api/extract?url=https://mp.weixin.qq.com/s/1czzeOClAF1e_AQjCM4jCg"
 ```
 
 #### 响应说明

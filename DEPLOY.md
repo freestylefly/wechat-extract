@@ -14,9 +14,9 @@ docker build -t we-extract-api .
 
 ### 2. 运行容器
 ```bash
-docker run -d -p 3000:3000 --name we-extract-service we-extract-api
+docker run -d -p 6800:6800 --name we-extract-service we-extract-api
 ```
-服务将在 `http://localhost:3000` 启动。
+服务将在 `http://localhost:6800` 启动。
 
 ---
 

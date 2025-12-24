@@ -1,7 +1,7 @@
 const http = require('http');
 const { extract } = require('./index');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 6800;
 
 const server = http.createServer(async (req, res) => {
   // 设置 CORS 头，允许跨域调用

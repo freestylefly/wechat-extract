@@ -24,7 +24,7 @@ asn1@~0.2.3:
   dependencies:
     safer-buffer "~2.1.0"
 
-assert-plus@^1.0.0, assert-plus@1.0.0:
+assert-plus@1.0.0, assert-plus@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/assert-plus/download/assert-plus-1.0.0.tgz"
   integrity sha1-8S4PPF13sLHN2RRpQuTpbB5N1SU=
@@ -92,7 +92,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-core-util-is@~1.0.0, core-util-is@1.0.2:
+core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
@@ -129,7 +129,7 @@ delayed-stream@~1.0.0:
   resolved "http://registry.npm.taobao.org/delayed-stream/download/delayed-stream-1.0.0.tgz"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
 
-dom-serializer@~0.1.0, dom-serializer@0:
+dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.0"
   resolved "http://registry.npm.taobao.org/dom-serializer/download/dom-serializer-0.1.0.tgz"
   integrity sha1-BzxpdUbOB4DOI75KKOKT5AvDDII=
@@ -137,7 +137,7 @@ dom-serializer@~0.1.0, dom-serializer@0:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
-domelementtype@^1.3.0, domelementtype@1:
+domelementtype@1, domelementtype@^1.3.0:
   version "1.3.0"
   resolved "http://registry.npm.taobao.org/domelementtype/download/domelementtype-1.3.0.tgz"
   integrity sha1-sXrtguirWeUt2cGbF1bg/BhyBMI=
@@ -154,18 +154,18 @@ domhandler@^2.3.0:
   dependencies:
     domelementtype "1"
 
-domutils@^1.5.1:
-  version "1.7.0"
-  resolved "http://registry.npm.taobao.org/domutils/download/domutils-1.7.0.tgz"
-  integrity sha1-Vuo0HoNOBuZ0ivehyyXaZ+qfjCo=
-  dependencies:
-    dom-serializer "0"
-    domelementtype "1"
-
 domutils@1.5.1:
   version "1.5.1"
   resolved "http://registry.npm.taobao.org/domutils/download/domutils-1.5.1.tgz"
   integrity sha1-3NhIiib1Y9YQeeSMn3t+Mjc2gs8=
+  dependencies:
+    dom-serializer "0"
+    domelementtype "1"
+
+domutils@^1.5.1:
+  version "1.7.0"
+  resolved "http://registry.npm.taobao.org/domutils/download/domutils-1.7.0.tgz"
+  integrity sha1-Vuo0HoNOBuZ0ivehyyXaZ+qfjCo=
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -188,15 +188,15 @@ extend@~3.0.2:
   resolved "http://registry.npm.taobao.org/extend/download/extend-3.0.2.tgz"
   integrity sha1-+LETa0Bx+9jrFAr/hYsQGewpFfo=
 
-extsprintf@^1.2.0:
-  version "1.4.0"
-  resolved "http://registry.npm.taobao.org/extsprintf/download/extsprintf-1.4.0.tgz"
-  integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
-
 extsprintf@1.3.0:
   version "1.3.0"
   resolved "http://registry.npm.taobao.org/extsprintf/download/extsprintf-1.3.0.tgz"
   integrity sha1-lpGEQOMEGnpBT4xS48V06zw+HgU=
+
+extsprintf@^1.2.0:
+  version "1.4.0"
+  resolved "http://registry.npm.taobao.org/extsprintf/download/extsprintf-1.4.0.tgz"
+  integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
 fast-deep-equal@^2.0.1:
   version "2.0.1"
@@ -419,7 +419,7 @@ request-promise@^4.2.2:
     stealthy-require "^1.1.0"
     tough-cookie ">=2.3.3"
 
-request@^2.34, request@^2.88.0:
+request@^2.88.0:
   version "2.88.0"
   resolved "http://registry.npm.taobao.org/request/download/request-2.88.0.tgz"
   integrity sha1-nC/KT301tZLv5Xx/ClXoEFIST+8=

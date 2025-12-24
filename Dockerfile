@@ -13,7 +13,7 @@ RUN npm install --production
 COPY . .
 
 # 暴露端口 (对应 server.js 中的 3000)
-EXPOSE 3000
+EXPOSE 6800
 
-# 启动服务
+# 启动命令
 CMD ["npm", "start"]
