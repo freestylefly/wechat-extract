@@ -870,6 +870,25 @@ const extract = async function(html, options = {}) {
     }
   }
 
+  // 2025-12-20 Patch: Fallback for msg_desc using og:description
+  if (!data.msg_desc) {
+    const desc = $("meta[property='og:description']").attr("content") || $("meta[name='description']").attr("content");
+    if (desc) {
+      data.msg_desc = desc
+    }
+  }
+
+  // 2025-12-20 Patch: If msg_desc is still null, try to extract from content
+  if (!data.msg_desc && data.msg_content) {
+    // Remove HTML tags
+    const text = data.msg_content.replace(/<[^>]+>/g, '');
+    // Remove extra whitespace
+    const cleanText = text.replace(/\s+/g, ' ').trim();
+    if (cleanText.length > 0) {
+      data.msg_desc = cleanText.substring(0, 140) + (cleanText.length > 140 ? '...' : '');
+    }
+  }
+
   if (data.msg_content.includes('<script') && data.msg_content.includes('script>') && data.msg_content.includes('nonce=')) {
     const desc = $("meta[property='og:description']").attr("content")
     if (desc) {

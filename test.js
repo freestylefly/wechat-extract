@@ -70,7 +70,7 @@ const fs = require('fs')
 
   // console.log(sogou)
 
-  const url = fs.readFileSync('./links/20240107.html', 'utf-8')
+  const url = 'https://mp.weixin.qq.com/s/1czzeOClAF1e_AQjCM4jCg'
   const postRs = await extract(url, {
     shouldReturnContent: true
   })

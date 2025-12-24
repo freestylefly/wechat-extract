@@ -1,4 +1,5 @@
 .DS_Store
 node_modules
 links
-temp
+tempdebug_content.html
+logs/

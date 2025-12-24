@@ -14,6 +14,10 @@
     "url": "https://github.com/airyland/we-extract"
   },
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "dayjs": "^1.7.4",

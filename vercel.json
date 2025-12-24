@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "we-extract-api",
+  "builds": [
+    {
+      "src": "api/extract.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/extract",
+      "dest": "/api/extract.js"
+    }
+  ]
+}
